@@ -1,6 +1,8 @@
 # node-check-update
-Use to get notifications for updates in Fedora.  
-This program runs dnf check-update and sends a notification if updates are available.  
+Disabled gnome-software?  
+This program will remind you to update your system when updates are available.  
+
+Currently working only with dnf package manager (Fedora).
 
 ### How to use
 ```
