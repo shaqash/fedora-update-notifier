@@ -14,8 +14,12 @@ $ git clone https://github.com/shaqash/node-check-update.git
 $ cd node-check-update
 $ npm install
 
+// Check if it works (Try to downgrade python for example)
+$ sudo dnf downgrade python3
+$ node index.js
+
 // Schedule the program using cron
 $ crontab -e
-// Insert line to schedule for 8:26PM every day.
+// Insert the following to schedule for 8:26PM every day.
 26 20 * * * /usr/bin/node $HOME/Documents/node-update-check/index.js
 ```
