@@ -1,0 +1,19 @@
+{
+  "name": "check-update",
+  "version": "1.0.0",
+  "description": "Sends notif for system updates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaqash/node-check-update.git"
+  },
+  "author": "Shaked Ashkenazi",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/shaqash/node-check-update/issues"
+  },
+  "homepage": "https://github.com/shaqash/node-check-update#readme"
+}
