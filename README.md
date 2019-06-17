@@ -1,10 +1,9 @@
-# node-check-update
-Disabled gnome-software?  
+# Update notifier
 This program will remind you to update your system when updates are available.  
 
 Currently working only with dnf package manager (Fedora).
 
-### How to use
+## How to run & schedule
 ```
 // Clone to your preferred dir
 $ cd Documents
@@ -22,4 +21,13 @@ $ node index.js
 $ crontab -e
 // Insert the following to schedule for 8:26PM every day.
 26 20 * * * /usr/bin/node $HOME/Documents/node-update-check/index.js
+```
+## How to configure
+Inside config/ folder, you can find a json file called config.json.  
+You can change this file to customize your notification.  
+For example,  
+Change the notification title to "System Updates":  
+```
+{
+  "notifTitle": "System Updates"
 ```
