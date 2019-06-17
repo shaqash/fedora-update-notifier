@@ -7,7 +7,7 @@ Currently working only with dnf package manager (Fedora).
 ```
 // Clone to your preferred dir
 $ cd Documents
-$ git clone https://github.com/shaqash/node-check-update.git
+$ git clone https://github.com/shaqash/update-notifier.git
 
 // Install Node modules
 $ cd node-check-update
