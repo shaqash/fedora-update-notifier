@@ -1,5 +1,5 @@
 # Update notifier
-This program will remind you to update your system when updates are available.  
+Sends update notifs.  
 
 Currently working only with dnf package manager (Fedora).
 
