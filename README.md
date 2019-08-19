@@ -1,6 +1,5 @@
 # Update notifier
-Sends update notifs.  
-
+Sends update notifs for the ones uninstalled gnome-software or does not have them for some reason.  
 Currently working only with dnf package manager (Fedora).
 
 ## How to run & schedule
