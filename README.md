@@ -1,5 +1,10 @@
 # Update notifier
-Sends update notifs for the ones uninstalled gnome-software or does not have them for some reason.  
+### What it does
+Sends update notifications.
+### Use case
+* Uninstalled gnome-software and does not get them.
+* Can customize the notification.
+
 Currently working only with dnf package manager (Fedora/RHEL?).
 
 ## How to run & schedule
