@@ -1,6 +1,6 @@
 # Update notifier
 ### What it does
-Sends update notifications.
+Send update notifications.
 ### Use case
 * Uninstalled gnome-software and does not get them.
 * Can customize the notification.
