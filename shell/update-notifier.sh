@@ -1,5 +1,7 @@
 #!/bin/sh
-
+: '
+Written by Shaked Ashkenazi
+'
 
 : 'DNF exit codes for check-update.
 #" DNF exit code will be 100
@@ -8,11 +10,14 @@
 #source:
 # https://dnf.readthedocs.io/en/latest/command_ref.html#check-update-command
 '
-OUTPUT=$(/usr/bin/dnf check-update -q)
+DNF=/usr/bin/dnf
+NOTIFY=/usr/bin/notify-send
+WC=/usr/bin/wc
+OUTPUT=$($DNF check-update -q)
 EXITCODE=$?
-
+COUNT=$(($($WC -l <<<$OUTPUT)-1)) #Word count considering one empty line
 case "$EXITCODE" in
-  "100") /usr/bin/notify-send "Update!" "$OUTPUT"
+  "100") $NOTIFY "Update!" "$(($COUNT)) updates are available"
   ;;
   "0") echo "No updates :("
   ;;
