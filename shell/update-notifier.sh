@@ -8,7 +8,7 @@
 #source:
 # https://dnf.readthedocs.io/en/latest/command_ref.html#check-update-command
 '
-OUTPUT=$(/usr/bin/dnf check-update)
+OUTPUT=$(/usr/bin/dnf check-update -q)
 EXITCODE=$?
 
 case "$EXITCODE" in
