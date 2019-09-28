@@ -31,7 +31,7 @@ $ crontab -e
 26 20 * * * $HOME/Documents/fedora-update-notifier/shell/update-notifier.sh
 ```
 ## How to configure
-Available for the Nodejs version
+Available for the Nodejs version  
 Inside config/ folder, you can find a json file called config.json.  
 You can change this file to customize your notification.  
 For example,  
