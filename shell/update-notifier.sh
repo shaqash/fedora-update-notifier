@@ -15,9 +15,9 @@ NOTIFY=/usr/bin/notify-send
 WC=/usr/bin/wc
 OUTPUT=$($DNF check-update -q)
 EXITCODE=$?
-COUNT=$(($($WC -l <<<$OUTPUT)-1)) #Word count considering one empty line
+COUNT=$(($(echo "$OUTPUT" | $WC -l)-1)) #Word count considering one empty line
 case "$EXITCODE" in
-  "100") $NOTIFY "Update!" "$(($COUNT)) updates are available"
+  "100") $NOTIFY "Update!" "$COUNT updates are available"
   ;;
   "0") echo "No updates :("
   ;;
