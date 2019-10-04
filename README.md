@@ -5,7 +5,7 @@ There are two version: Node and Shell.
 I suggest you use the shell one, it's way lighter.  
 ### Use case
 * Uninstalled gnome-software and does not get them.
-* Can customize the notification.
+* Can customize the outputs.
 
 Currently working only with dnf package manager (Fedora/RHEL?).
 
