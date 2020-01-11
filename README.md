@@ -9,7 +9,7 @@ I suggest you use the shell one, it's way lighter.
 
 Currently working only with dnf package manager (Fedora/RHEL?).
 
-## How to run & schedule
+## How to run or schedule
 ```
 // Clone to your preferred dir
 $ cd Documents
