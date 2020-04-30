@@ -13,11 +13,12 @@ Written by Shaked Ashkenazi
 DNF=/usr/bin/dnf
 NOTIFY=/usr/bin/notify-send
 WC=/usr/bin/wc
+TIMEOUT=43200000 #12*60*60*1000
 OUTPUT=$($DNF check-update -q)
 EXITCODE=$?
 COUNT=$(($(echo "$OUTPUT" | $WC -l)-1)) #Word count considering one empty line
 case "$EXITCODE" in
-  "100") $NOTIFY "Update!" "$COUNT updates are available"
+  "100") $NOTIFY "Update!" "$COUNT updates are available" -t $TIMEOUT
   ;;
   "0") echo "No updates :("
   ;;
