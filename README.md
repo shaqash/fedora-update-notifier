@@ -1,4 +1,5 @@
 # Update notifier
+![](update-notifier-screenshot.png)
 ### What it does
 Send update notifications.  
 There are two version: Node and Shell.  
