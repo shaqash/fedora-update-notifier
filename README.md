@@ -14,9 +14,9 @@ Currently working only with dnf package manager (Fedora/RHEL?).
 // Clone to your preferred dir
 $ cd Documents
 $ git clone https://github.com/shaqash/fedora-update-notifier.git
-
-// Install Node modules (For the Nodejs version)
 $ cd fedora-update-notifier
+
+// Install Node modules (Skip if you're using the shell version)
 $ cd nodejs
 $ npm install
 
@@ -25,7 +25,7 @@ $ sudo dnf downgrade python3
 // For the node version
 $ node index.js
 // For the shell version
-$ ./update-notifier.sh
+$ ./shell/update-notifier.sh
 
 // Schedule the program using cron
 $ crontab -e
