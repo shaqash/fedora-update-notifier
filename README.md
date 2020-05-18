@@ -22,7 +22,7 @@ $ cd nodejs
 $ npm install
 
 // Check if it works (Try to downgrade python for example)
-$ sudo dnf downgrade python3
+$ sudo dnf downgrade python2
 // For the node version
 $ node index.js
 // For the shell version
@@ -34,7 +34,7 @@ $ crontab -e
 26 20 * * * $HOME/Documents/fedora-update-notifier/shell/update-notifier.sh
 ```
 ## How to configure
-Available for the Nodejs version  
+Config file available for the **Nodejs version**  
 Inside config/ folder, you can find a json file called config.json.  
 You can change this file to customize your notification.  
 For example,  
@@ -43,3 +43,17 @@ Change the notification title to "System Updates":
 {
   "notifTitle": "System Updates"
 ```
+**Shell version**  
+Currently no config file.  
+Go to `shell/update-notifier.sh`
+```bash
+case "$EXITCODE" in
+  "100") $NOTIFY "Update!" "$COUNT updates are available"  // first arg is title, second arg is description
+  ;;
+  "0") echo "No updates :("
+  ;;
+  "1") echo "Error: $OUTPUT"
+  ;;
+esac
+```
+
