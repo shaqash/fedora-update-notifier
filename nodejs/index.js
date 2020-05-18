@@ -2,7 +2,7 @@ const exec = require('child_process').exec;
 const notifier = require('node-notifier');
 const config = require('./config/config');
 
-const cmd = 'dnf check-update'       // Shell command - Check for updates
+const cmd = 'dnf check-update -q'    // Shell command - Check for updates
 const title = config.notifTitle;     // Title of notification
 
 /*
